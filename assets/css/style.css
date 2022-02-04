@@ -9,20 +9,70 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     background: #414141;
+
+}
+
+header {
+    padding: 9px 35px;
+    background-color: #ada097;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: solid white;
+    
+}
+
+header nav {
+    margin: 1px  5px;
 }
 
 header h1 a {
     color: white;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
 }
 
 nav ul li a {
     color: white;
+    text-decoration: none;
+    font-size: 29px;
+    
 }
 
 #about-me {
     color: white;
+    margin: 20px;
+    padding: 10px;
+    
+    
 }
 
+#about-me h2{
+    border-bottom: 2px solid white;
+    padding: 10px;
+    margin: 20px;
+}
+
+#about-me img {
+    border: 2px solid white;
+    padding: 10px;
+    margin: 20px;
+}
+#about-me ul {
+    list-style: none;
+    border-bottom:  2px solid white;
+    padding-bottom: 10px;
+    
+}
+.bio {
+    padding:10px;
+}
 .works {
     color: white;
 }
@@ -38,3 +88,15 @@ nav ul li a {
 
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER SCREENS*/
+/*Warning these values are just placeholders until I have a better idea of what the initial layout of the page will be*/
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+}
+
+/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
+@media screen and (max-width: 575px) {
+
+}
