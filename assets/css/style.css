@@ -21,11 +21,16 @@ header {
     border-bottom: solid white;
     top: 0;
     position: sticky;
+    opacity: 0.9;
+    
 }
 
 header nav {
     margin: 1px  5px;
+    
 }
+
+
 
 header h1 a {
     color: white;
@@ -37,6 +42,7 @@ header h1 a {
 
 nav ul {
     list-style: none;
+    
 }
 
 nav ul li a {
@@ -45,6 +51,10 @@ nav ul li a {
     font-size: 29px;
     
 }
+
+nav ul li a:hover {
+    background-color: black;
+} 
 
 #about-me {
     color: white;
@@ -73,6 +83,7 @@ nav ul li a {
 }
 .bio {
     padding:10px;
+    
 }
 .works {
     color: white;
