@@ -14,21 +14,22 @@ body {
 }
 
 header {
-    padding: 9px 35px;
+    /*padding: 9px 35px;*/
     background-color: #ada097;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+   /* display: flex; */
+    /*justify-content: space-between;*/
+   /* flex-wrap: wrap; */
+    /*align-items: center;*/
     border-bottom: solid white;
     top: 0;
     position: sticky;
     opacity: 0.9;
+    z-index: 9999;
     
 }
 
 header nav {
-    margin: 1px  5px;
+    /*margin: 1px  5px;*/
     
 }
 
@@ -42,8 +43,17 @@ header h1 a {
     text-decoration: none;
 }
 
-nav ul {
+.nav {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    gap: 2rem;
+    
+}
+
+.nav li {
+    /*flex: 1;*/
     
 }
 
