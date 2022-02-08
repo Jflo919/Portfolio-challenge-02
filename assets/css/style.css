@@ -97,14 +97,13 @@ nav ul li a:hover {
 
 .works img {
     border: 2px solid white;
-}
-.web-applications  {
-    
+    opacity: 0.7;
+
 }
 
-.web-applications img:hover {
-    
-} 
+.works img:hover {
+    opacity: 1;
+}
 
 #contact-me {
     display: flex;
@@ -121,10 +120,15 @@ nav ul li a:hover {
 .contact a {
     color: white;
     font-weight: bold;
+    text-decoration: none;
     
 }
 
-
+.contact a:hover{
+    background-color: black;
+    border-radius: 10px;
+    
+}
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER SCREENS*/
 /*Warning these values are just placeholders until I have a better idea of what the initial layout of the page will be*/
