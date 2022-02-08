@@ -107,14 +107,21 @@ nav ul li a:hover {
 } 
 
 #contact-me {
-    
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 .contact {
     color: white;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .contact a {
     color: white;
+    font-weight: bold;
+    
 }
 
 
