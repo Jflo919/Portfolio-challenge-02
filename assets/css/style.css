@@ -14,12 +14,7 @@ body {
 }
 
 header {
-    /*padding: 9px 35px;*/
     background-color: #ada097;
-   /* display: flex; */
-    /*justify-content: space-between;*/
-   /* flex-wrap: wrap; */
-    /*align-items: center;*/
     border-bottom: solid white;
     top: 0;
     position: sticky;
@@ -67,9 +62,7 @@ nav ul li a:hover {
 /*Short bio styling goes here*/
 
 #about-me {
-    color: white;
-   /* margin: 20px;*/
-   /* padding: 10px;*/ 
+    color: white; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,8 +82,7 @@ nav ul li a:hover {
 
 #about-me img {
     border: 2px solid white;
-   /* padding: 10px;
-    margin: 20px; */
+   
 }
 #about-me ul {
     
@@ -99,11 +91,14 @@ nav ul li a:hover {
     margin-bottom: 30px;
     
 }
+
+/* Styling for the non-li text in biography goes here */
 .bio {
     padding:10px;
     font-size: 18px;
     
 }
+/* Styling for the work samples of the portfolio go here. */
 #my-work {
 
     padding: 10px;
@@ -139,7 +134,7 @@ nav ul li a:hover {
     
 }
 
-
+/* Styling for the contact me section goes here. */
 
 #contact-me {
     display: flex;
@@ -177,23 +172,81 @@ nav ul li a:hover {
     header {
     position:relative;
     width: 200%;
+    text-align: center;
     }
     .nav {
         
         flex-direction: column;
         gap: 0rem;
+        text-align: center;
+        
+    }
+
+    #about-me {
+        width: 200%;
+        display: flex;
+        font-size: 22px;
+        
+        
+    }
+
+    .bio {
+        flex: 1;
+        align-items: flex-end;
+        flex-direction: column;
+        font-size: 22px;
+        
         
     }
 
     #my-work {
         width: 200%;
         gap: 0.5rem;
-        flex-direction: column;
-        
+        flex-direction: column;   
+       align-items: center;
+        text-align:center;
+        font-size: 22px;
+    
     }
+    #contact-me {
+        font-size: 22px;
+        width: 200%;
+        align-items: center;       
+    }
+
 }
 
 /*MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
 @media screen and (max-width: 575px) {
+    header h1 a {
+        font-size: 45px;
+    }
+
+    .nav a { 
+    gap: 0.25rem;
+    font-size: 40px;
+    }
+
+    #about-me {
+        font-size: 29px;
+    }    
+
+    .bio {
+        font-size: 25px;
+    }
+
+    #my-work {
+        font-size: 25px;
+    }
+    
+    #my-work h2{
+        font-size: 40px;
+    }
+
+    #contact-me {
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 29px;       
+    }
 
 }
