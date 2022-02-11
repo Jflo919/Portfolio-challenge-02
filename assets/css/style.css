@@ -28,12 +28,8 @@ header {
     
 }
 
-header nav {
-    /*margin: 1px  5px;*/
-    
-}
 
-
+/* styling for the link in the h1 title, Julian Floyd */
 
 header h1 a {
     color: white;
@@ -43,6 +39,7 @@ header h1 a {
     text-decoration: none;
 }
 
+/*Creates a flex box for the nav container, whose children are the nav ul and li elements*/
 .nav {
     list-style: none;
     display: flex;
@@ -52,10 +49,6 @@ header h1 a {
     
 }
 
-.nav li {
-    /*flex: 1;*/
-    
-}
 
 nav ul li a {
     color: white;
@@ -64,46 +57,75 @@ nav ul li a {
     
 }
 
+/*Adds some stlying to the nav elements when the mous is hovered over them*/
+
 nav ul li a:hover {
     background-color: black;
     border-radius: 10px;
 } 
 
+/*Short bio styling goes here*/
+
 #about-me {
     color: white;
-    margin: 20px;
-    padding: 10px;
-    
+   /* margin: 20px;*/
+   /* padding: 10px;*/ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 2rem;
     
 }
 
+
 #about-me h2{
-    border-bottom: 2px solid white;
-    padding: 10px;
-    margin: 20px;
+    border-bottom: 2px;
+    padding-top: 10px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    
 }
 
 #about-me img {
     border: 2px solid white;
-    padding: 10px;
-    margin: 20px;
+   /* padding: 10px;
+    margin: 20px; */
 }
 #about-me ul {
-    list-style: none;
-    border-bottom:  2px solid white;
-    padding-bottom: 10px;
+    
+    border-bottom:  2px;
+    padding-bottom: 25px; 
+    margin-bottom: 30px;
     
 }
 .bio {
     padding:10px;
+    font-size: 18px;
     
 }
-.works {
+#my-work {
+
     padding: 10px;
     color: white;
     border-bottom: 2px solid white;
     margin-left: 45px;
+    display: flex;
+    gap: 6rem;
+}
+
+#my-work h3 {
+    border-bottom: 2px solid White;
+}
+
+.web-applications {
+    display: flex;
     
+}   
+
+.web-applications-children {
+    flex-wrap: wrap;
+    flex: 1;
 }
 
 .works img {
@@ -117,9 +139,12 @@ nav ul li a:hover {
     
 }
 
+
+
 #contact-me {
     display: flex;
     justify-content: space-around;
+    
     margin-bottom: 30px;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -147,8 +172,24 @@ nav ul li a:hover {
 /*Warning these values are just placeholders until I have a better idea of what the initial layout of the page will be*/
 
 @media screen and (max-width: 768px) {
-    section {
-        padding: 30px 15px;
+    
+    
+    header {
+    position:relative;
+    width: 200%;
+    }
+    .nav {
+        
+        flex-direction: column;
+        gap: 0rem;
+        
+    }
+
+    #my-work {
+        width: 200%;
+        gap: 0.5rem;
+        flex-direction: column;
+        
     }
 }
 
