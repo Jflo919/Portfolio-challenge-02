@@ -20,3 +20,4 @@ Media Queries have been added to change the following features:
  ![Alt text](/assets/images/screen3.jpg?raw=true "Screenshot 3")
 
 ### Link URL: 
+* https://jflo919.github.io/Portfolio-challenge-02/#contact-me
